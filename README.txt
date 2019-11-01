@@ -1,3 +1,5 @@
+More details coming soon!
+
 To Run the entire pipeline:
 
 1) Install dependencies for segmentation module, download an already trained model from the link below and run prediction based on instructions within "segmentation" module. You should be able to see semantic and boundary predictions within "dbg" folder of the scene.
