@@ -16,6 +16,9 @@ python train.py --dataroot ./datasets/densely_packed_training/ --model fcn_train
 # Test FCN GAN-ADAPT
 python test_jdx_rgb.py --dataroot ./datasets/densely_packed_test/ --model fcn_save --name densely_packed --dataset_mode single --input_nc 3 --output_nc 3
 
+# Train CycleGAN model
+python train.py --dataroot ./datasets/occ_training_data/ --model cycle_gan --name occ_cyclegan --dataset_mode unaligned --display_freq 1 --gpu_ids 0,1,2,3 --batchSize 16 --resize_or_crop crop --no_dropout
+
 # Test an already trained model
 Download and place the model file in a directory within the checkpoints directory and specify the directory name by passing to the 'name' parameter at test time. 
 
